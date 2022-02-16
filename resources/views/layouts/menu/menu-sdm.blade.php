@@ -1,6 +1,6 @@
 <li class="nav-item">
     <a href="#" class="nav-link">
-      <i class="nav-icon fa fa-briefcase"></i>
+      <i class="nav-icon fa fa-users-cog fa-beat-fade teal"></i>
       <p>
      SDM
         <i class="fas fa-angle-left right"></i>

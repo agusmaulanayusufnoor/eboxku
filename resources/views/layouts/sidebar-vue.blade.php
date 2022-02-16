@@ -38,16 +38,16 @@
                 <ul class="nav nav-treeview">
 
                     <li class="nav-item">
-                        <a href="{{ url('user/create') }}" class="nav-link">
-                        <i class="fa fa-plus nav-icon"></i>
-                        <p>Tambah User</p>
-                        </a>
+                        <router-link to="data-user" class="nav-link">
+                            <i class="fa fa-plus nav-icon"></i>
+                            <p>Tambah User</p>
+                        </router-link>
                     </li>
                     <li class="nav-item">
-                        <a href="/user" class="nav-link">
+                        <router-link to="data-user" class="nav-link">
                         <i class="fas fa-users nav-icon"></i>
                         <p>Data User</p>
-                        </a>
+                    </router-link>
                     </li>
                 </ul>
             </li>

@@ -27,11 +27,4 @@ class DashboardController extends Controller
         return view('dashboard');
     }
 
-    // public function setperiode(Request $request){
-    //     //dd($request->all());
-    //     $setperiode                 = new Setperiode;
-    //     $setperiode->periode        = $request->periode;
-    //     $setperiode->save();
-    //     return redirect()->back()->with('pesanperiode', 'Tanggal Periode Disimpan');
-    // }
 }

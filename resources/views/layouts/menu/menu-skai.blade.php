@@ -1,12 +1,18 @@
 <li class="nav-item">
     <a href="#" class="nav-link">
-        <i class="nav-icon fa fa-calculator fa-flip blue" style="--fa-animation-duration: 2s;"></i>
+      <i class="nav-icon fas fa-edit fa-flip orange" style="--fa-animation-duration: 3s;"></i>
       <p>
-        Pelayanan
+        SKAI
         <i class="fas fa-angle-left right"></i>
       </p>
     </a>
     <ul class="nav nav-treeview">
+      <!-- <li class="nav-item">
+        <a href="#" class="nav-link">
+          <i class="far fa-plus-square nav-icon"></i>
+          <p>Tambah Stok</p>
+        </a>
+      </li> -->
       <li class="nav-item">
         <a href="/stock" class="nav-link">
         <i class="nav-icon fas fa-database"></i>
@@ -21,10 +27,10 @@
         </a>
       </li>
       <li class="nav-item">
-        <router-link to="/data-ba" class="nav-link">
+        <a href="/pelayanan/download" class="nav-link">
           <i class="fas fa-th nav-icon"></i>
           <p>Download BA Kas</p>
-        </router-link>
+        </a>
       </li>
       {{-- menu tabungan --}}
       <li class="nav-item">
@@ -78,7 +84,7 @@
         {{-- menu teller --}}
         <li class="nav-item">
           <a href="#" class="nav-link">
-            <i class="nav-icon fas fa-cash-register"></i>
+            <i class="nav-icon fa fa-file-invoice-dollar"></i>
             <p>
               Teller
               <i class="fas fa-angle-left right"></i>

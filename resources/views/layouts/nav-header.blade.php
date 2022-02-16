@@ -1,4 +1,8 @@
-  <!-- Navbar -->
+ <!-- Preloader -->
+ <div class="preloader flex-column justify-content-center align-items-center">
+    <img class="animation__shake" src="{{ asset('assets/dist/img/logo-bprku.jpeg') }}" alt="BPRKULogo" height="60" width="60">
+  </div>
+<!-- Navbar -->
   <nav class="main-header navbar navbar-expand navbar-white navbar-light">
     <!-- Left navbar links -->
     <ul class="navbar-nav">
@@ -6,7 +10,7 @@
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="/" class="nav-link">Dashboard</a>
+        <a href="/" class="nav-link">.: Dashboard :. </a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
         <div style="text-transform:capitalize;">
@@ -15,7 +19,6 @@
         </a>
         </div>
     </li>
-
     </ul>
 
     <!-- Right navbar links -->
@@ -42,26 +45,23 @@
         </div>
       </li>
 
-
       <li class="nav-item">
         <a class="nav-link" data-widget="fullscreen" href="#" role="button">
           <i class="fas fa-expand-arrows-alt"></i>
         </a>
       </li>
-      <li class="nav-item">
+      {{-- <li class="nav-item">
         <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
           <i class="fas fa-th-large"></i>
         </a>
-      </li>
-      <li class="nav-item d-none d-sm-inline-block">
-
-        <a href="{{ route('logout') }}" class="nav-link" onclick="event.preventDefault();
-        document.getElementById('logout-form').submit();""><i class="fa fa-sign-out-alt"></i>Keluar</a>
-            <form class="form-inline" id="logout-form" action="{{ route('logout') }}" method="POST">
-                @csrf
-            </form>
-        </div>
-    </li>
+      </li> --}}
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="{{ route('logout') }}" class="nav-link" onclick="event.preventDefault();
+            document.getElementById('logout-form').submit();"><i class="fa fa-sign-out-alt"></i>Keluar</a>
+                <form class="form-inline" id="logout-form" action="{{ route('logout') }}" method="POST">
+                    @csrf
+                </form>
+        </li>
     </ul>
   </nav>
   <!-- /.navbar -->

@@ -28,8 +28,8 @@ use App\Http\Controllers\TelegramController;
 //     return view('dashboard');
 // });
 Route::get('/',[LoginController::class,'showLoginForm'])->name('showLoginForm');
-Route::get('/dashboard',[DashboardController::class,'index'])->name('dashboard');
-//Route::post('/setperiode',[DashboardController::class,'setperiode'])->name('setperiode');
+//Route::get('/dashboard',[DashboardController::class,'index'])->name('dashboard');
+Route::get('/{any}',[DashboardController::class,'index'])->where('any','.*');
 
 Route::post('/sendchat',[TelegramController::class,'sendchat'])->name('sendchat');
 Auth::routes();
